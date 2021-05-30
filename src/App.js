@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
+import { Route, Router, Switch } from 'react-router';
 import './App.css';
+import { HomePage } from './containers/HomePage';
+import { Participation } from './containers/participation';
+import { RappellLogin } from './containers/participation/rappellLogin';
+import { RappellCih } from './containers/rappelCiH';
+import { Rappellsignup } from './containers/rappellsignup';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Router>
+        <Switch >
+          <Route path="/" components={HomePage} />
+          <Route path="/Particep" exact component={Participation} />
+          
+          <Route path="/Login"  exact component={RappellLogin} />
+          <Route path="/Singup" exact component={Rappellsignup} /> 
+
+          <Route path ="/Cih" exact component={RappellCih} />
+        
+          
+        </Switch>
+      </Router>
     </div>
   );
 }

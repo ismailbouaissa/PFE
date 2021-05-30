@@ -1,0 +1,37 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "title": "rayan molayan mride khaso 3amaliya",
+        "thumbnailUrl": "http://localhost:9000/garden.jpg",
+        "rate": 10000,
+        "rating": 2500,
+        "specialist": {
+          "id": 1,
+          "fullName": "Mark brone"
+        }
+      },
+      {
+        "id": 2,
+        "title": "I will paint your car from top to bottom",
+        "thumbnailUrl": "http://localhost:9000/car.jpg",
+        "rate": 50,
+        "rating": 3,
+        "specialist": {
+          "id": 1,
+          "fullName": "Mark brone"
+        }
+      },
+      {
+        "id": 3,
+        "title": "I will Manage your team with strict plan",
+        "thumbnailUrl": "http://localhost:9000/office.jpg",
+        "rate": 42,
+        "rating": 5,
+        "specialist": {
+          "id": 1,
+          "fullName": "Mark brone"
+        }
+      }
+    ]
+  }
